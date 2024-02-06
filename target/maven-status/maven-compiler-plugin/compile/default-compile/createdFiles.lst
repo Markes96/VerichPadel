@@ -1,0 +1,14 @@
+com\verich\padel\App.class
+com\verich\padel\infrastructure\jpa\user\entity\LevelEnum.class
+com\verich\padel\infrastructure\jpa\user\entity\UserEntity.class
+com\verich\padel\infrastructure\http\server\cdo\AllOKServerStatusCDO.class
+com\verich\padel\infrastructure\http\user\dto\SexEnum.class
+com\verich\padel\infrastructure\http\user\dto\LevelEnum.class
+com\verich\padel\infrastructure\jpa\user\entity\GenderEnum.class
+com\verich\padel\infrastructure\http\user\dto\CreateDTO.class
+com\verich\padel\infrastructure\http\server\cdo\ContactInfoCDO.class
+com\verich\padel\infrastructure\http\user\UserController.class
+com\verich\padel\domain\User.class
+com\verich\padel\infrastructure\http\server\ServerController.class
+com\verich\padel\infrastructure\jpa\user\UserRepository.class
+com\verich\padel\domain\Reservation.class

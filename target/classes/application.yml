@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /verich/padel
+
+spring:
+  datasource:
+    url: jdbc:postgresql://ep-red-cell-a26o27r1.eu-central-1.aws.neon.fl0.io:5432/VERICH-PADEL-DB
+    username: fl0user
+    password: 6kpHP5lmbGSL
+    driver-class-name: org.postgresql.Driver
