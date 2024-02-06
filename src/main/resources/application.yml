@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  jpa:
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://ep-red-cell-a26o27r1.eu-central-1.aws.neon.fl0.io:5432/VERICH-PADEL-DB
+    username: fl0user
+    password: 6kpHP5lmbGSL
+    driver-class-name: org.postgresql.Driver
+    
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    
+

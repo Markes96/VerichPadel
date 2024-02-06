@@ -1,0 +1,10 @@
+server:
+  port: 8080
+  
+spring:
+  datasource:
+    url: jdbc:mysql://mysql-verich-padel.cbwig6a4sb97.eu-west-3.rds.amazonaws.com:3306/VERICH_PADEL?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrival=true
+    username: Markes96
+    password: Ferna9064
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  
