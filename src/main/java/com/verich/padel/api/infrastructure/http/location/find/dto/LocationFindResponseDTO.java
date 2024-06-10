@@ -1,5 +1,6 @@
 package com.verich.padel.api.infrastructure.http.location.find.dto;
 
+import com.verich.padel.common.http.type.MkHttpResponseDTO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +10,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class LocationFindResponseDTO {
+public class LocationFindResponseDTO extends MkHttpResponseDTO {
 
   private Long id;
 

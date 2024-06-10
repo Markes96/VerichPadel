@@ -47,7 +47,7 @@ public enum Level {
     return levelIndex > LENGEND.index ? LENGEND : INITIATION;
   }
 
-  public int value() {
+  public int getValue() {
     return (index * RANGE) + OUTPUT;
   }
 }

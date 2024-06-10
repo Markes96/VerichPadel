@@ -5,13 +5,13 @@ import java.util.Objects;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import com.verich.padel.api.domain.model.Location;
-import com.verich.padel.common.jpa.port.MkJpaWriterPort;
+import com.verich.padel.common.domain.port.MkDomainWriterPort;
 
 @Component
 public class LocationComponent {
 
   @Autowired
-  MkJpaWriterPort<Location> LocationWriter;
+  MkDomainWriterPort<Location> writer;
 
   private static final String LOCATION_DONT_EXIST = "Error, location do not exist -> ";
   private static final String ID = "id: ";
@@ -19,7 +19,7 @@ public class LocationComponent {
 
   public Location getById(final Long id) {
     final Location filter = new Location(id);
-    final Location location = LocationWriter.findOne(filter);
+    final Location location = writer.findOne(filter);
     if (Objects.isNull(location))
       throw new RuntimeException(LOCATION_DONT_EXIST + ID + id);
     return location;
@@ -27,31 +27,31 @@ public class LocationComponent {
 
   public Location getByName(final String name) {
     final Location filter = new Location(name);
-    final Location location = LocationWriter.findOne(filter);
+    final Location location = writer.findOne(filter);
     if (Objects.isNull(location))
       throw new RuntimeException(LOCATION_DONT_EXIST + NAME + name);
     return location;
   }
 
   public List<Location> getAll() {
-    return LocationWriter.findAll();
+    return writer.findAll();
   }
 
   public void add(final Location location) {
-    LocationWriter.add(location);
+    writer.add(location);
   }
 
   public void update(final Location location) {
-    LocationWriter.update(location);
+    writer.update(location);
   }
 
   public void deleteById(final Long id) {
     final Location filter = new Location(id);
-    LocationWriter.delete(filter);
+    writer.delete(filter);
   }
 
   public void deleteByName(final String name) {
     final Location filter = new Location(name);
-    LocationWriter.delete(filter);
+    writer.delete(filter);
   }
 }

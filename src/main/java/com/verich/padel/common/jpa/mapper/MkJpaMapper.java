@@ -1,9 +1,12 @@
 package com.verich.padel.common.jpa.mapper;
 
-public interface MkJpaMapper<D, E> {
+import com.verich.padel.common.domain.type.MkDomainObject;
+import com.verich.padel.common.jpa.type.MkJpaEntity;
 
-  D mapFrom(E object);
+public interface MkJpaMapper<D extends MkDomainObject, E extends MkJpaEntity> {
 
-  E mapTo(D object);
+  E mapD2E(D object);
+
+  D mapE2D(final E object);
 
 }

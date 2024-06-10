@@ -56,6 +56,6 @@ public class UserEntity extends MkJpaEntity {
   private Gender gender;
 
   @Column(nullable = false)
-  private int level;
+  private Integer level;
 
 }

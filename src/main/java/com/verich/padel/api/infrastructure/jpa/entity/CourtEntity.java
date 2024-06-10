@@ -1,5 +1,6 @@
 package com.verich.padel.api.infrastructure.jpa.entity;
 
+import com.verich.padel.common.jpa.type.MkJpaEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -21,9 +22,10 @@ import lombok.Setter;
 @AllArgsConstructor
 
 @Entity
-@Table(name = "courts",
+@Table(
+    name = "courts",
     uniqueConstraints = @UniqueConstraint(columnNames = {"name", "location"}))
-public class CourtEntity {
+public class CourtEntity extends MkJpaEntity {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)

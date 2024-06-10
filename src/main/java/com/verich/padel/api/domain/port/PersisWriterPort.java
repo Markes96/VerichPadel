@@ -1,7 +1,7 @@
 package com.verich.padel.api.domain.port;
 
-import com.verich.padel.common.jpa.port.MkJpaWriterPort;
-import com.verich.padel.common.jpa.type.MkJpaObject;
+import com.verich.padel.common.domain.port.MkDomainWriterPort;
+import com.verich.padel.common.domain.type.MkDomainObject;
 
-public interface PersisWriterPort<P extends MkJpaObject>
-    extends MkJpaWriterPort<P> {}
+public interface PersisWriterPort<P extends MkDomainObject>
+    extends MkDomainWriterPort<P> {}

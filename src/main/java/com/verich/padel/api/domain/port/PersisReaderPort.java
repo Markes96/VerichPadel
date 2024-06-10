@@ -1,7 +1,7 @@
 package com.verich.padel.api.domain.port;
 
-import com.verich.padel.common.jpa.port.MkJpaReaderPort;
-import com.verich.padel.common.jpa.type.MkJpaObject;
+import com.verich.padel.common.domain.port.MkDomainReaderPort;
+import com.verich.padel.common.domain.type.MkDomainObject;
 
-public interface PersisReaderPort<P extends MkJpaObject>
-    extends MkJpaReaderPort<P> {}
+public interface PersisReaderPort<P extends MkDomainObject>
+    extends MkDomainReaderPort<P> {}

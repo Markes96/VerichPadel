@@ -10,7 +10,7 @@ import com.verich.padel.api.infrastructure.http.server.status.cdo.AllOKServerSta
 
 @RestController
 @RequestMapping("/server")
-public class ServerStatusController extends ServerController {
+public class ServerStatusController implements ServerController {
 
   @Autowired
   private AllOKServerStatusCDO serverStatusCDO;

@@ -1,6 +1,6 @@
 package com.verich.padel.api.domain.model;
 
-import com.verich.padel.common.jpa.type.MkJpaObject;
+import com.verich.padel.common.domain.type.MkDomainObject;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,10 +10,9 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Location extends MkJpaObject {
+public class Location extends MkDomainObject {
 
   private Long id;
-
   private String name;
 
   private String postalCode;

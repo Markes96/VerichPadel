@@ -1,6 +1,6 @@
 package com.verich.padel.api.domain.model;
 
-import com.verich.padel.common.jpa.type.MkJpaObject;
+import com.verich.padel.common.domain.type.MkDomainObject;
 import com.verich.padel.common.type.enumeration.Level;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,7 +12,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Player extends MkJpaObject {
+public class Player extends MkDomainObject {
 
   @NonNull
   private String nickname;

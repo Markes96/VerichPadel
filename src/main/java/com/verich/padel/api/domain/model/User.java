@@ -1,7 +1,7 @@
 package com.verich.padel.api.domain.model;
 
 import java.sql.Date;
-import com.verich.padel.common.jpa.type.MkJpaObject;
+import com.verich.padel.common.domain.type.MkDomainObject;
 import com.verich.padel.common.type.enumeration.Gender;
 import com.verich.padel.common.type.enumeration.Level;
 import lombok.AllArgsConstructor;
@@ -16,7 +16,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @RequiredArgsConstructor
-public class User extends MkJpaObject {
+public class User extends MkDomainObject {
 
   @NonNull
   private String nickname;

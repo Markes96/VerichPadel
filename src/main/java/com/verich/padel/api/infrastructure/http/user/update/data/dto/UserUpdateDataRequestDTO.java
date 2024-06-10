@@ -1,6 +1,7 @@
 package com.verich.padel.api.infrastructure.http.user.update.data.dto;
 
 import java.sql.Date;
+import com.verich.padel.common.http.type.MkHttpRequestDTO;
 import com.verich.padel.common.type.enumeration.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,7 +12,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserUpdateDataRequestDTO {
+public class UserUpdateDataRequestDTO extends MkHttpRequestDTO {
 
   private String nickname;
   private String password;

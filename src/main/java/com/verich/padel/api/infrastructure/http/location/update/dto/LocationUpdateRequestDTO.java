@@ -1,5 +1,6 @@
 package com.verich.padel.api.infrastructure.http.location.update.dto;
 
+import com.verich.padel.common.http.type.MkHttpRequestDTO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,7 +11,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class LocationUpdateRequestDTO {
+public class LocationUpdateRequestDTO extends MkHttpRequestDTO {
 
   @NonNull
   private Long id;

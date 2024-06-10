@@ -4,13 +4,13 @@ import java.util.Objects;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import com.verich.padel.api.domain.model.User;
-import com.verich.padel.common.jpa.port.MkJpaWriterPort;
+import com.verich.padel.common.domain.port.MkDomainWriterPort;
 
 @Component
 public class UserComponent {
 
   @Autowired
-  MkJpaWriterPort<User> userWriter;
+  MkDomainWriterPort<User> userWriter;
 
   private static final String USER_DONT_EXIST = "Error, user do not exist -> ";
   private static final String NICKNAME = "nickname: ";

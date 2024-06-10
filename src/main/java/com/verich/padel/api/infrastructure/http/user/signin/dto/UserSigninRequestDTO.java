@@ -1,6 +1,7 @@
 package com.verich.padel.api.infrastructure.http.user.signin.dto;
 
 import java.sql.Date;
+import com.verich.padel.common.http.type.MkHttpRequestDTO;
 import com.verich.padel.common.type.enumeration.Gender;
 import com.verich.padel.common.type.enumeration.Level;
 import lombok.AllArgsConstructor;
@@ -12,7 +13,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserSigninRequestDTO {
+public class UserSigninRequestDTO extends MkHttpRequestDTO {
 
   private String nickname;
   private String email;
